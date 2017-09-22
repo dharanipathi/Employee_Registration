@@ -1,0 +1,18 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="emp_registration.menu" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Info" id = "eMenuPage">
+		<content>
+	    <List>
+	    <items>
+	    <StandardListItem title = "Registration Details" type = "Active" press = "regDet"></StandardListItem>
+	    <StandardListItem title = "Work Experience" type = "Active" press = "wrkExp"></StandardListItem>
+	    <StandardListItem title = "Contact Details" type = "Active" press = "conDet"></StandardListItem>
+	    <StandardListItem title = "Bank Details" type = "Active" press = "bankDet" ></StandardListItem>
+	    <StandardListItem title = "Certification" type = "Active" press = "certificate"></StandardListItem>
+	    <StandardListItem title = "Personal Documents" type = "Active" press = "perDoc"></StandardListItem>
+	    <StandardListItem title = "Summary" type = "Active" press = "Summary"></StandardListItem>
+	    </items>
+	    </List>	
+		</content>
+	</Page>
+</core:View>

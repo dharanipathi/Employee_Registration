@@ -1,0 +1,33 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+		controllerName="emp_registration.contactDetail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Contact Details">
+		<content>
+	    <VBox>
+	    <form:SimpleForm title = "Address">
+	    <form:content>
+	    <core:Title text="Residential Address" />
+	    <Label text = "Street/IINo"/>
+	    <Input/><Input/>
+	    <Label text = "Zip Code/City"/>
+	    <Input/><Input/>
+	    <Label text = "Country"/>
+	    <ComboBox>
+	    <items>
+	    <core:Item text="India"/>
+	    <core:Item text="US"/>
+	    <core:Item text="UK"/>
+	    <core:Item text="Australia"/>
+	    <core:Item text="Germany"/>
+	    </items>
+	    </ComboBox>
+	    <core:Title text="Emergency Contact Details" />
+	    <Label text = "Contact Number"/>
+	    <Input/>
+	    <Label text = "Relationship"/>
+	    <Input/>
+	    </form:content>
+	    </form:SimpleForm>
+	    </VBox>
+		</content>
+	</Page>
+</core:View>

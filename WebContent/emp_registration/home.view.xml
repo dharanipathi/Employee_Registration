@@ -1,0 +1,53 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form = "sap.ui.layout.form"
+		controllerName="emp_registration.home" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Employee Registration">
+		<content>
+	    <form:SimpleForm title = "Please Enter Employee Details">
+	    <form:content>
+	    <Label text="Employee Name"/> 
+	    <Input/>
+	    <Label text="Department"/>
+	    <ComboBox>
+	    <items>
+	    <core:Item text="Oracle"/>
+	    <core:Item text="Java"/>
+	    <core:Item text="SAP"/>
+	    <core:Item text="Network"/>
+	    </items>
+	    </ComboBox>
+	    <Label text="Role"/>
+	    <ComboBox>
+	    <items>
+	    <core:Item text="Software Engineer"/>
+	    <core:Item text="Associate Software Engineer"/>
+	    <core:Item text="Senior Software Engineer"/>
+	    <core:Item text="Network Engineer"/>
+	    </items>
+	    </ComboBox>
+	    <Label text="Email"/>
+	    <Input/>
+	    <Label text="Pan"/>
+	    <Input/>
+	    <Label text="Country"/>
+	    <ComboBox>
+	    <items>
+	    <core:Item text="India"/>
+	    <core:Item text="US"/>
+	    <core:Item text="UK"/>
+	    <core:Item text="Australia"/>
+	    <core:Item text="Germany"/>
+	    </items>
+	    </ComboBox>
+	    <Label text="Zip Code"/>
+	    <Input/>	    
+	    </form:content>
+	    </form:SimpleForm>   
+		</content>
+		   <footer>
+	    <OverflowToolbar>
+	    <ToolbarSpacer/>
+	    <Button icon="sap-icon://add-contact" text="Register" press="empRegister"/>
+	    </OverflowToolbar>
+	    </footer>
+	</Page>
+</core:View>

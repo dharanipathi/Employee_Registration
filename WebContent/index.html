@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>	    
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("emp_registration");
+				/*Home Page */
+				var app = new sap.m.App("idApp",{initialPage:"idhome1"});
+				var page = sap.ui.view({id:"idhome1", viewName:"emp_registration.home", type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(page);
+				
+				/*Employee Details Page */
+		    	var sApp = new sap.m.SplitApp("idSplitApp");
+			 	var eDetails = sap.ui.view({id:"eDetail", viewName:"emp_registration.empDetails", type:sap.ui.core.mvc.ViewType.XML});
+			 	sApp.addDetailPage(eDetails);
+				
+				/*Work Experience Page*/
+				var eWrkExp = sap.ui.view({id: "eWrkExp", viewName:"emp_registration.workExp", type:sap.ui.core.mvc.ViewType.XML});
+				sApp.addDetailPage(eWrkExp);
+				
+				/*Contact Details Page*/
+				var eConDet = sap.ui.view({id: "eConDet", viewName:"emp_registration.contactDetail", type:sap.ui.core.mvc.ViewType.XML});
+				sApp.addDetailPage(eConDet);
+				
+				/*Bank Detail Page*/
+				var eBankDet = sap.ui.view({id: "eBankDet", viewName:"emp_registration.bankDetail", type:sap.ui.core.mvc.ViewType.XML});
+				sApp.addDetailPage(eBankDet);
+				
+				
+				/*Menu List Page*/
+			 	var eMenu = sap.ui.view({id:"eMenu", viewName:"emp_registration.menu",type:sap.ui.core.mvc.ViewType.XML});
+			 	sApp.addMasterPage(eMenu);
+			
+				app.addPage(sApp);
+				app.placeAt("content");
+		</script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

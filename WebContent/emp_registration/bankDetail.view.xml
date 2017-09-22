@@ -1,0 +1,27 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+		controllerName="emp_registration.bankDetail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Bank Details">
+		<content>
+	    <form:SimpleForm title = "Bank Information">
+	    <form:content>
+	    <Label text = "Benificiary Name"/>
+	    <Input/>
+	    <Label text = "IFSC Code"/>
+	    <Input/>
+	    <Label text = "Account Number"/>
+	    <Input/>
+	    <Label text = "Confirm Account Number"/>
+	    <Input/>
+	    <Label text = "Account Type"/>
+	    <ComboBox>
+	    <items>
+	    <core:Item text="Savings Account"/>
+	    <core:Item text="Current Account"/>
+	    <core:Item text="Loan Account"/>
+	    </items>
+	    </ComboBox>
+	    </form:content>
+	    </form:SimpleForm>
+		</content>
+	</Page>
+</core:View>

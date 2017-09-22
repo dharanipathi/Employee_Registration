@@ -1,0 +1,17 @@
+.mySubmit{
+background-color: #346187;
+border: 2px solid black;
+border-radius:10px;
+}
+ 
+.mySave{
+background-color: #2b7d2b;
+border: 2px solid black;
+border-radius:10px;
+}
+ 
+.myExit{
+background-color: #bb0000;
+border: 2px solid black;
+border-radius:10px;
+}
